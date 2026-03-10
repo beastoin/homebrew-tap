@@ -1,9 +1,9 @@
 class AgentSwift < Formula
   desc "CLI for AI agents to control macOS apps via Accessibility API"
   homepage "https://github.com/beastoin/agent-swift"
-  url "https://github.com/beastoin/agent-swift/releases/download/v0.1.0/agent-swift-0.1.0-macos-universal.tar.gz"
-  sha256 "5ea80631477223cb02f7bc347f1864ec82d323a3ec497c0e53eefffd5e270d26"
-  version "0.1.0"
+  url "https://github.com/beastoin/agent-swift/releases/download/v0.2.1/agent-swift-0.2.1-macos-universal.tar.gz"
+  sha256 "55ca515b39d6a20389707fd733a11cba5b55eff63ca8cf90e4fda47ee5c52ace"
+  version "0.2.1"
   license "MIT"
 
   depends_on :macos
@@ -13,6 +13,6 @@ class AgentSwift < Formula
   end
 
   test do
-    assert_match "0.1.0", shell_output("#{bin}/agent-swift --version")
+    assert_match "0.2.1", shell_output("#{bin}/agent-swift --version")
   end
 end
